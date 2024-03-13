@@ -1,0 +1,2 @@
+sphinx_rtd_theme
+git+https://github.com/rkdarst/sphinx-copybutton.git@exclude-unselectable-3
