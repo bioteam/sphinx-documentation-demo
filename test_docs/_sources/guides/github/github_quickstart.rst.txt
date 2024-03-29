@@ -1,0 +1,103 @@
+========================
+GitHub Quickstart Guide
+========================
+
+.. seealso::
+    For more in-depth questions, see:
+
+
+General
+=======
+
+How Do I Get Access to the NIH-NEI GitHub Organization? 
+--------------------------------------------------------
+If you don't already have an existing GitHub account (or if you don't want to use your personal one), you will need to `create one <https://github.com/join>`_. 
+Next, you can request access to the organization by submitting a ticket to the `IT service desk. <https://myitsm.nih.gov/>`_ 
+In the ticket, include your GitHub username, a brief justification for the request, and your supervisor.
+
+Do I login with my GitHub or NIH credentials? 
+--------------------------------------------------------
+You use both. You first log in with your GitHub credentials. Then you will log in with your NIH credentials once you visit a page within the NEI GitHub organization.
+
+How Do I Create a Repository?
+--------------------------------------------------------
+GitHub has created a `helpful tutorial <https://guides.github.com/activities/hello-world/>`_, which will help you get started. Be sure to set the owner to NIH-NEI to make the repo part of the organization like in the image featured below:
+
+.. image:: images/create_repo.png
+
+What Should I Put into a Repository? 
+--------------------------------------------------------
+Repositories are for code, documentation, and small sample data. You should not include full datasets or any PHI/PII in a repository.
+
+Management and Sharing
+======================
+
+Why Don’t I Have Permissions to Do Certain Tasks? 
+--------------------------------------------------------
+
+You will need to submit a ticket to the IT service desk to do the following:
+
+* **Make a repository public** (include repo URL, justification, and supervisor name in request)
+* **Create a team** (include team name, team description, and supervisor name in request)
+* **Delete/archive a repo** (include repo URL, justification, and supervisor name in request)
+
+What Application(s) Should I Use to Manage My Repos? 
+--------------------------------------------------------
+
+.. tip::
+
+    If you are new to Git and GitHub, you should try `GitHub Desktop <https://desktop.github.com/>`_. 
+    Installing this requires help from an administrator via a service desk ticket, but the application is approved (white listed) for installation at NEI.
+
+.. list-table:: Many editors have useful GitHub extensions developed for them: 
+    :header-rows: 1
+
+    * - **If you use...**
+      - **...then consider using this**
+    * - RStudio
+      - `Builtin Git Support <https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN>`_
+    * - VS Code
+      - `GitHub Pull Requests and Issues extension <https://code.visualstudio.com/docs/editor/github>`_
+    * - Atom
+      - `Builtin GitHub extension <https://flight-manual.atom.io/using-atom/sections/github-package/>`_ 
+
+
+:octicon:`note` How Do I Share My Repositories with Collaborators? 
+------------------------------------------------------------------------------------
+Whoever you share your repository with will also need to belong to the NEI GitHub organization. 
+You can :bdg-link-primary-line:`share it with them directly or via a team <https://docs.github.com/en/github/administering-a-repository/managing-teams-and-people-with-access-to-your-repository#inviting-a-team-or-person>`. 
+If you find yourself regularly sharing your repos with the same people, you should use a GitHub team. 
+You can `submit a ticket <https://myitsm.nih.gov/>`_ to create a team.
+
+This is an example :bdg-link-primary:`explicit title <https://example.com>`
+
+This is an example :bdg-link-primary-line:`explicit title <https://example.com>`
+
+.. You can `share it with them directly or via a team <https://docs.github.com/en/github/administering-a-repository/managing-teams-and-people-with-access-to-your-repository#inviting-a-team-or-person>`_. 
+
+Licensing
+=========
+
+What License Should I Use?
+--------------------------------------------------------
+
+NEI employees are encouraged to use this `modified BSD 3-clause license <https://github.com/NIH-NEI/NEI-Bioinformatics-Core/blob/main/LICENSE>`_.
+It should be included in the top level directory of your repository in a file called LICENSE. 
+You will need to edit the AUTHORS and the SOFTWARE section.
+
+I’ve Modified Code with an Existing Open Source License. How Should I Distribute It? 
+-------------------------------------------------------------------------------------
+
+It depends on the license. In the case of a GPL license, `the code would still be covered by the GPL, although your modifications would not be copyrighted <https://www.gnu.org/licenses/gpl-faq.en.html#GPLUSGovAdd>`_. 
+Other open source licenses allow you to redistribute code under a different license. 
+You should contact the Technology Development Coordinator if you have additional questions.
+
+How Do I Handle Third-Party Contributions?
+--------------------------------------------------------
+
+If you accept any third-party contributions from individuals outside of the NIH, their changes should be licensed with 
+`an unmodified BSD 3-clause license <https://github.com/NIH-NEI/NEI-Bioinformatics-Core/blob/main/docs/licenses/LICENSE.BSD-3-Clause>`_. 
+This license should be included in the top level directory of your repository in a file called LICENSE.BSD-3-Clause. 
+You should also include `this CONTRIBUTING file <https://github.com/NIH-NEI/NEI-Bioinformatics-Core/blob/main/docs/licenses/CONTRIBUTING>`_ 
+to inform contributors that their contributions will be licensed under a BSD 3-clause license. 
+You are free to include additional contribution guidelines in this file (e.g. coding styles).

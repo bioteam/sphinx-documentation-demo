@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>GitHub Quickstart Guide &#8212; BioTeam Sphinx Demo  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=4ff6a8b2" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'guides/github/github_quickstart';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">BioTeam Sphinx Demo</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../tab_1/index.html">
+                        Tab_1
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../tab_1/index.html">
+                        Tab_1
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">GitHub</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">GitHub Quickstart Guide</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">GitHub...</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="github-quickstart-guide">
+<h1>GitHub Quickstart Guide<a class="headerlink" href="#github-quickstart-guide" title="Link to this heading">#</a></h1>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>For more in-depth questions, see:</p>
+</div>
+<section id="general">
+<h2>General<a class="headerlink" href="#general" title="Link to this heading">#</a></h2>
+<section id="how-do-i-get-access-to-the-nih-nei-github-organization">
+<h3>How Do I Get Access to the NIH-NEI GitHub Organization?<a class="headerlink" href="#how-do-i-get-access-to-the-nih-nei-github-organization" title="Link to this heading">#</a></h3>
+<p>If you don’t already have an existing GitHub account (or if you don’t want to use your personal one), you will need to <a class="reference external" href="https://github.com/join">create one</a>.
+Next, you can request access to the organization by submitting a ticket to the <a class="reference external" href="https://myitsm.nih.gov/">IT service desk.</a>
+In the ticket, include your GitHub username, a brief justification for the request, and your supervisor.</p>
+</section>
+<section id="do-i-login-with-my-github-or-nih-credentials">
+<h3>Do I login with my GitHub or NIH credentials?<a class="headerlink" href="#do-i-login-with-my-github-or-nih-credentials" title="Link to this heading">#</a></h3>
+<p>You use both. You first log in with your GitHub credentials. Then you will log in with your NIH credentials once you visit a page within the NEI GitHub organization.</p>
+</section>
+<section id="how-do-i-create-a-repository">
+<h3>How Do I Create a Repository?<a class="headerlink" href="#how-do-i-create-a-repository" title="Link to this heading">#</a></h3>
+<p>GitHub has created a <a class="reference external" href="https://guides.github.com/activities/hello-world/">helpful tutorial</a>, which will help you get started. Be sure to set the owner to NIH-NEI to make the repo part of the organization like in the image featured below:</p>
+<img alt="../../_images/create_repo.png" src="../../_images/create_repo.png" />
+</section>
+<section id="what-should-i-put-into-a-repository">
+<h3>What Should I Put into a Repository?<a class="headerlink" href="#what-should-i-put-into-a-repository" title="Link to this heading">#</a></h3>
+<p>Repositories are for code, documentation, and small sample data. You should not include full datasets or any PHI/PII in a repository.</p>
+</section>
+</section>
+<section id="management-and-sharing">
+<h2>Management and Sharing<a class="headerlink" href="#management-and-sharing" title="Link to this heading">#</a></h2>
+<section id="why-dont-i-have-permissions-to-do-certain-tasks">
+<h3>Why Don’t I Have Permissions to Do Certain Tasks?<a class="headerlink" href="#why-dont-i-have-permissions-to-do-certain-tasks" title="Link to this heading">#</a></h3>
+<p>You will need to submit a ticket to the IT service desk to do the following:</p>
+<ul class="simple">
+<li><p><strong>Make a repository public</strong> (include repo URL, justification, and supervisor name in request)</p></li>
+<li><p><strong>Create a team</strong> (include team name, team description, and supervisor name in request)</p></li>
+<li><p><strong>Delete/archive a repo</strong> (include repo URL, justification, and supervisor name in request)</p></li>
+</ul>
+</section>
+<section id="what-application-s-should-i-use-to-manage-my-repos">
+<h3>What Application(s) Should I Use to Manage My Repos?<a class="headerlink" href="#what-application-s-should-i-use-to-manage-my-repos" title="Link to this heading">#</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you are new to Git and GitHub, you should try <a class="reference external" href="https://desktop.github.com/">GitHub Desktop</a>.
+Installing this requires help from an administrator via a service desk ticket, but the application is approved (white listed) for installation at NEI.</p>
+</div>
+<table class="table" id="id1">
+<caption><span class="caption-text">Many editors have useful GitHub extensions developed for them:</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>If you use…</strong></p></th>
+<th class="head"><p><strong>…then consider using this</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>RStudio</p></td>
+<td><p><a class="reference external" href="https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN">Builtin Git Support</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>VS Code</p></td>
+<td><p><a class="reference external" href="https://code.visualstudio.com/docs/editor/github">GitHub Pull Requests and Issues extension</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Atom</p></td>
+<td><p><a class="reference external" href="https://flight-manual.atom.io/using-atom/sections/github-package/">Builtin GitHub extension</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="svg-version-1-1-width-1-0em-height-1-0em-class-sd-octicon-sd-octicon-note-viewbox-0-0-16-16-aria-hidden-true-path-fill-rule-evenodd-d-m0-3-75c0-2-784-784-2-1-75-2h12-5c-966-0-1-75-784-1-75-1-75v8-5a1-75-1-75-0-0114-25-14h1-75a1-75-1-75-0-010-12-25v-8-5zm1-75-25a-25-25-0-00-25-25v8-5c0-138-112-25-25-25h12-5a-25-25-0-00-25-25v-8-5a-25-25-0-00-25-25h1-75zm3-5-6-25a-75-75-0-01-75-75h7a-75-75-0-010-1-5h-7a-75-75-0-01-75-75zm-75-2-25a-75-75-0-000-1-5h4a-75-75-0-000-1-5h-4z-path-svg-how-do-i-share-my-repositories-with-collaborators">
+<h3><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-note" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0114.25 14H1.75A1.75 1.75 0 010 12.25v-8.5zm1.75-.25a.25.25 0 00-.25.25v8.5c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25v-8.5a.25.25 0 00-.25-.25H1.75zM3.5 6.25a.75.75 0 01.75-.75h7a.75.75 0 010 1.5h-7a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5h4a.75.75 0 000-1.5h-4z"></path></svg> How Do I Share My Repositories with Collaborators?<a class="headerlink" href="#svg-version-1-1-width-1-0em-height-1-0em-class-sd-octicon-sd-octicon-note-viewbox-0-0-16-16-aria-hidden-true-path-fill-rule-evenodd-d-m0-3-75c0-2-784-784-2-1-75-2h12-5c-966-0-1-75-784-1-75-1-75v8-5a1-75-1-75-0-0114-25-14h1-75a1-75-1-75-0-010-12-25v-8-5zm1-75-25a-25-25-0-00-25-25v8-5c0-138-112-25-25-25h12-5a-25-25-0-00-25-25v-8-5a-25-25-0-00-25-25h1-75zm3-5-6-25a-75-75-0-01-75-75h7a-75-75-0-010-1-5h-7a-75-75-0-01-75-75zm-75-2-25a-75-75-0-000-1-5h4a-75-75-0-000-1-5h-4z-path-svg-how-do-i-share-my-repositories-with-collaborators" title="Link to this heading">#</a></h3>
+<p>Whoever you share your repository with will also need to belong to the NEI GitHub organization.
+You can <a class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary reference external" href="https://docs.github.com/en/github/administering-a-repository/managing-teams-and-people-with-access-to-your-repository#inviting-a-team-or-person"><span>share it with them directly or via a team</span></a>.
+If you find yourself regularly sharing your repos with the same people, you should use a GitHub team.
+You can <a class="reference external" href="https://myitsm.nih.gov/">submit a ticket</a> to create a team.</p>
+<p>This is an example <a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference external" href="https://example.com"><span>explicit title</span></a></p>
+<p>This is an example <a class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary reference external" href="https://example.com"><span>explicit title</span></a></p>
+</section>
+</section>
+<section id="licensing">
+<h2>Licensing<a class="headerlink" href="#licensing" title="Link to this heading">#</a></h2>
+<section id="what-license-should-i-use">
+<h3>What License Should I Use?<a class="headerlink" href="#what-license-should-i-use" title="Link to this heading">#</a></h3>
+<p>NEI employees are encouraged to use this <a class="reference external" href="https://github.com/NIH-NEI/NEI-Bioinformatics-Core/blob/main/LICENSE">modified BSD 3-clause license</a>.
+It should be included in the top level directory of your repository in a file called LICENSE.
+You will need to edit the AUTHORS and the SOFTWARE section.</p>
+</section>
+<section id="ive-modified-code-with-an-existing-open-source-license-how-should-i-distribute-it">
+<h3>I’ve Modified Code with an Existing Open Source License. How Should I Distribute It?<a class="headerlink" href="#ive-modified-code-with-an-existing-open-source-license-how-should-i-distribute-it" title="Link to this heading">#</a></h3>
+<p>It depends on the license. In the case of a GPL license, <a class="reference external" href="https://www.gnu.org/licenses/gpl-faq.en.html#GPLUSGovAdd">the code would still be covered by the GPL, although your modifications would not be copyrighted</a>.
+Other open source licenses allow you to redistribute code under a different license.
+You should contact the Technology Development Coordinator if you have additional questions.</p>
+</section>
+<section id="how-do-i-handle-third-party-contributions">
+<h3>How Do I Handle Third-Party Contributions?<a class="headerlink" href="#how-do-i-handle-third-party-contributions" title="Link to this heading">#</a></h3>
+<p>If you accept any third-party contributions from individuals outside of the NIH, their changes should be licensed with
+<a class="reference external" href="https://github.com/NIH-NEI/NEI-Bioinformatics-Core/blob/main/docs/licenses/LICENSE.BSD-3-Clause">an unmodified BSD 3-clause license</a>.
+This license should be included in the top level directory of your repository in a file called LICENSE.BSD-3-Clause.
+You should also include <a class="reference external" href="https://github.com/NIH-NEI/NEI-Bioinformatics-Core/blob/main/docs/licenses/CONTRIBUTING">this CONTRIBUTING file</a>
+to inform contributors that their contributions will be licensed under a BSD 3-clause license.
+You are free to include additional contribution guidelines in this file (e.g. coding styles).</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general">General</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-get-access-to-the-nih-nei-github-organization">How Do I Get Access to the NIH-NEI GitHub Organization?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#do-i-login-with-my-github-or-nih-credentials">Do I login with my GitHub or NIH credentials?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-create-a-repository">How Do I Create a Repository?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-should-i-put-into-a-repository">What Should I Put into a Repository?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#management-and-sharing">Management and Sharing</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-dont-i-have-permissions-to-do-certain-tasks">Why Don’t I Have Permissions to Do Certain Tasks?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-application-s-should-i-use-to-manage-my-repos">What Application(s) Should I Use to Manage My Repos?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#svg-version-1-1-width-1-0em-height-1-0em-class-sd-octicon-sd-octicon-note-viewbox-0-0-16-16-aria-hidden-true-path-fill-rule-evenodd-d-m0-3-75c0-2-784-784-2-1-75-2h12-5c-966-0-1-75-784-1-75-1-75v8-5a1-75-1-75-0-0114-25-14h1-75a1-75-1-75-0-010-12-25v-8-5zm1-75-25a-25-25-0-00-25-25v8-5c0-138-112-25-25-25h12-5a-25-25-0-00-25-25v-8-5a-25-25-0-00-25-25h1-75zm3-5-6-25a-75-75-0-01-75-75h7a-75-75-0-010-1-5h-7a-75-75-0-01-75-75zm-75-2-25a-75-75-0-000-1-5h4a-75-75-0-000-1-5h-4z-path-svg-how-do-i-share-my-repositories-with-collaborators"><svg aria-hidden="true" class="sd-octicon sd-octicon-note" height="1.0em" version="1.1" viewbox="0 0 16 16" width="1.0em"><path d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0114.25 14H1.75A1.75 1.75 0 010 12.25v-8.5zm1.75-.25a.25.25 0 00-.25.25v8.5c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25v-8.5a.25.25 0 00-.25-.25H1.75zM3.5 6.25a.75.75 0 01.75-.75h7a.75.75 0 010 1.5h-7a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5h4a.75.75 0 000-1.5h-4z" fill-rule="evenodd"></path></svg> How Do I Share My Repositories with Collaborators?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#licensing">Licensing</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-license-should-i-use">What License Should I Use?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ive-modified-code-with-an-existing-open-source-license-how-should-i-distribute-it">I’ve Modified Code with an Existing Open Source License. How Should I Distribute It?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-handle-third-party-contributions">How Do I Handle Third-Party Contributions?</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright BioTeam Inc.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

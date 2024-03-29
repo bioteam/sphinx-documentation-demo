@@ -1,0 +1,12 @@
+FAQS
+=================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Frequently Asked Questions
+
+   questions
+
+
+
+
