@@ -31,8 +31,9 @@ conf_py_path = "/docs/" # with leading and trailing slash
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    # githubpages just adds a .nojekyll file
-    "sphinx.ext.githubpages",
+    "sphinx.ext.githubpages", # used for hosting on GitHub Pages
+    "sphinx.ext.todo",
+    "sphinx_copybutton", # adds a copy button to source code blocks
     "sphinx_design"
 ]
 
@@ -85,6 +86,7 @@ html_css_files = [
     'css/custom.css'
 ]
 
+todo_include_todos = True
 
 # HTML context:
 from os.path import basename, dirname, realpath
