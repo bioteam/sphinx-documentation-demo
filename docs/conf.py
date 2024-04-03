@@ -68,7 +68,6 @@ html_theme_options = {
   # SHOW_NAV_LEVEL: Normally for the left sidebar, deeply nested items are collapsed.
   #                 We can change the defualt maximum depth by changing the nav level
   "show_nav_level": 2,
-#   "navbar_center": ["navbar-nav"],
 
   # LOGO: This determines the text (and icon, if you have one) that you see
   #       in the upper left-hand corner of the page
@@ -76,7 +75,7 @@ html_theme_options = {
       "text": "BioTeam Sphinx Demo"
   }
 }
-html_show_sourcelink = False
+html_show_sourcelink = True
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
