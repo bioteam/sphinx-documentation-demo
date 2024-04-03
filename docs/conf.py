@@ -15,15 +15,6 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 
-# -- Project information -----------------------------------------------------
-
-project = "BioTeam Sphinx Demo"
-copyright ="BioTeam Inc"
-author = "Jordan Ramsdell"
-github_user = "jramsdell"
-github_repo_name = "sphinx-documentation-demo"  # auto-detected from dirname if blank
-github_version = "main"
-conf_py_path = "/docs/" # with leading and trailing slash
 
 # -- General configuration ---------------------------------------------------
 
@@ -61,7 +52,7 @@ exclude_patterns = [
 html_theme = "pydata_sphinx_theme" # To install a new theme, you have to pip install it first
 
 html_theme_options = {
-  "use_edit_page_button": False,
+  "use_edit_page_button": True,
   "show_toc_level": 4,
 
 
@@ -95,9 +86,19 @@ from os.path import basename, dirname, realpath
 #     "**": ["globaltoc.html"]
 # }
 
+# -- Project information -----------------------------------------------------
+
+project = "BioTeam Sphinx Demo"
+copyright ="BioTeam Inc"
+author = "Jordan Ramsdell"
+github_user = "jramsdell"
+github_repo_name = "sphinx-documentation-demo"  # auto-detected from dirname if blank
+github_version = "main"
+conf_py_path = "/docs/" # with leading and trailing slash
+
 html_context = {
     "display_github": True,
-    "github_user": github_user,
+    "github_user": author,
     # Auto-detect directory name.  This can break, but
     # useful as a default.
     "github_repo": github_repo_name or basename(dirname(realpath(__file__))),
