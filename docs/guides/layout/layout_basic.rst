@@ -109,7 +109,7 @@ Right Navigation Bar
 
 
 The right navigation bar allows users to navigation between **different sections within the current page**.
-This is automatically generated based on section headers specified within the page's :term:'rST' file.
+This is automatically generated based on section headers specified within the page's :term:`rST` file.
 
 ..
     .. image:: images/tab2_top.png

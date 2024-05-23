@@ -39,7 +39,7 @@ It's a good idea to install them in a **virtual environment**.
 3. Building Documentation
 -------------------------
 The documentation for the :code:`sphinx-documentation-demo` is located in :code:`docs/`.
-To build this documentation, while in the project directory, do:
+While in the root project directory, do:
 
 .. code-block:: bash
 
@@ -55,15 +55,13 @@ You can open the file :code:`docs/index.html` on your computer to view the HTML 
 The :code:`sphinx-autobuild` extension allows us to build local documentation whenever we make changes.
 It also refreshes the web browser so you can see the changes "live". This makes it **very convenient for rapid development**.
 
-This extension has already been included in the :code:`requirements.txt` file
-
 While in the virtual environment, run the following command:
 
 .. code-block:: bash
 
     sphinx-autobuild docs _build
 
-This will create a local host instance which you can then access through your web browser (you can just copy/paste the http address you get from :code:`sphinx-autobuild`)
+You can then point your web browser to: http://127.0.0.1:8000/
 
 Remote Build on GitHub
 ======================

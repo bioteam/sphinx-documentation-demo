@@ -1,3 +1,7 @@
+# import sys
+# import os
+# sys.path.insert(0, os.path.abspath('../'))
+
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -24,9 +28,18 @@
 extensions = [
     "sphinx.ext.githubpages", # used for hosting on GitHub Pages
     "sphinx.ext.todo",
+    "autoapi.extension",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
     "sphinx_copybutton", # adds a copy button to source code blocks
     "sphinx_design"
 ]
+
+# For API documentation
+autoapi_dirs = ["../testpackage"]
+autoapi_add_toctree_entry = False
+autodoc_typehints = 'description'
+
 
 # Settings for myst_nb:
 # https://myst-nb.readthedocs.io/en/latest/use/execute.html#triggering-notebook-execution

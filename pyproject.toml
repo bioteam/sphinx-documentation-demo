@@ -1,0 +1,10 @@
+[project]
+name = "sphinx-documentation-demo"
+dynamic = ["version"]
+dependencies = [
+    "pydata-sphinx-theme==0.15.2",
+    "Sphinx==7.2.6",
+    "sphinx-autobuild==2024.2.4",
+    "sphinx_copybutton",
+    "sphinx_design==0.5.0"
+]
