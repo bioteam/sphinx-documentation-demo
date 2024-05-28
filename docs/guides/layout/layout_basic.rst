@@ -101,7 +101,7 @@ The left navigation bar allows users to navigate between documents that have bee
 Each tab will have its own left navigation bar, allowing you to organize :term:`rST` files into one "folder" per tab.
 
 Right Navigation Bar
-===================
+=====================
 .. figure:: images/layout_right.png
         :class: sd-border-2
 

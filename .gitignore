@@ -1,4 +1,6 @@
 _build
 .venv
+.DS_Store
+*.egg-info
 sphinx_venv
 *.pyc

@@ -29,6 +29,7 @@ extensions = [
     "sphinx.ext.githubpages", # used for hosting on GitHub Pages
     "sphinx.ext.todo",
     "autoapi.extension",
+    "sphinx.ext.autosectionlabel",
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx_copybutton", # adds a copy button to source code blocks
