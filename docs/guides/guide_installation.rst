@@ -129,10 +129,54 @@ While there already a page set up for the :code`sphinx-documentation-demo` proje
 2. Using GitHub Workflow to Build Documentation
 -----------------------------------------------
 GitHub can automatically discover workflows located in the :code:`.github/workflows` directory within the project directory.
-We will be using a workflow to build documentation whenever a new commit is pushed to the repository.
+We will be using a workflow to build documentation whenever a **new commit is pushed to the repository**.
 
 2a. Example Workflow
 ~~~~~~~~~~~~~~~~~~~~
 We will be reviewing the workflow that :code:`sphinx-documentation-demo` uses.
+
 You can find the workflow in :code:`sphinx-documentation-demo/.github/workflows/documentation.yml`
 
+.. code-block:: yml
+    :emphasize-lines: 16,19,24,26
+    :linenos:
+
+    name: documentation
+
+    on: [push, pull_request, workflow_dispatch]
+
+    permissions:
+    contents: write
+
+    jobs:
+    docs:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-python@v3
+        - name: Install dependencies
+            run: |
+            pip install sphinx pydata-sphinx-theme sphinx-design sphinx-copybutton sphinx-autoapi
+        - name: Sphinx build
+            run: |
+            sphinx-build docs _build
+        - name: Deploy to GitHub Pages
+            uses: peaceiris/actions-gh-pages@v3
+            if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+            with:
+            publish_branch: gh-pages
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: _build/
+            force_orphan: true
+
+
+* **Line 16.** Install dependencies
+   * This tells GitHub to install sphinx and its dependencies to the ubuntu image. 
+   * **Note**: After you add a new sphinx extension to :code:`pyproject.toml` and to :code:`docs/conf.py`, you'll also need to add the dependency to the list on line 16.
+* **Line 19.** Build Docs
+   * This runs :code:`sphinx-build` on the :code:`docs/` directory (in the repo) and creates the :code:`_build/` directory.
+* Line 24. Publish to branch 
+   * After building the docs, this line tells GitHub to publish the changes to the :code:`gh-pages` branch.
+   * **Note**: this needs to be the same branch that GitHub Pages is set to publish with.
+* **Line 26.** Specify directory to publish
+   * This informs GitHub Pages where the static HTML documentation (built by :code:`sphinx-build`) is located.
