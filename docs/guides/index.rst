@@ -12,6 +12,12 @@ Guides
 
 .. toctree::
    :maxdepth: 1
+   :caption: Walkthroughs
+
+   walkthrough_adding_new_tab
+
+.. toctree::
+   :maxdepth: 1
    :caption: References
 
    reference_directives

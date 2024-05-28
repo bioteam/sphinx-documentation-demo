@@ -6,7 +6,7 @@ Local Installation
 ==================
 
 .. tip::
-    When you need to write a lot of documentation, it's a **good idea** to do it all locally. 
+    When you need to write a lot of documentation, it's a **good idea to do it all locally.** 
 
 
 1. Cloning the Repo
@@ -77,6 +77,7 @@ You can open the file :code:`docs/index.html` on your computer to view the HTML 
 .. tip::
 
     This option is probably the one you want.
+
 The :code:`sphinx-autobuild` extension allows us to build local documentation whenever we make changes.
 It also refreshes the web browser so you can see the changes "live". This makes it **very convenient for rapid development**.
 
@@ -137,7 +138,7 @@ We will be reviewing the workflow that :code:`sphinx-documentation-demo` uses.
 
 You can find the workflow in :code:`sphinx-documentation-demo/.github/workflows/documentation.yml`
 
-.. code-block:: yml
+.. code-block:: 
     :emphasize-lines: 16,19,24,26
     :linenos:
 
@@ -180,3 +181,29 @@ You can find the workflow in :code:`sphinx-documentation-demo/.github/workflows/
    * **Note**: this needs to be the same branch that GitHub Pages is set to publish with.
 * **Line 26.** Specify directory to publish
    * This informs GitHub Pages where the static HTML documentation (built by :code:`sphinx-build`) is located.
+
+
+3. Verifying GitHub Workflow Actions
+------------------------------------
+Using the previously mentioned workflow, a GitHub Action will be triggered whenever a commit is pushed to the repo.
+You can monitor running jobs from your GitHub Repository. 
+
+.. figure:: images/guide_install_github_actions_tab.png
+    :class: sd-border-2
+
+    Click on the :code:`Actions` tab.
+
+.. figure:: images/guide_install_actions_build.png
+    :class: sd-border-2
+
+    Current and previous workflow runs are listed in the Actions tab.
+    The color of the icon indicates the current status of the run.
+    You may notice a :code:`pages build and deployment` job running. This is reponsible for building the docs.
+
+.. figure:: images/guide_install_actions_error.png
+    :class: sd-border-2
+
+    A red icon indicates that the run has failed. You can click on a run to get debug info for each step.
+    Featured in this figure is a very common error: sphinx is missing an extension because it was not installed in the :code:`documentation.yml` workflow.
+
+    To fix this, :code:`sphinx-copybutton` had to be added to line 16 in :code:`documentation.yml` (see :ref:`2a. Example Workflow`)
