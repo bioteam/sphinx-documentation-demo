@@ -4,7 +4,7 @@ Modifying Sections
 .. admonition:: Use the Source!
     :class: sidebar tip
 
-    If you look to the sidebar on the right, you will see a link called :code:`Show Source`.  
+    The :code:`Show Source` link can be found in the right sidebar.  
     You can click on it to see the source :term:`rST` used to create the current page.
 
 It's often the case that you'll want to organize the contents of a tab (see :doc:`the previous walkthrough on adding a new tab <walkthrough_adding_new_tab>`).

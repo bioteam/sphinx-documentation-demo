@@ -21,7 +21,14 @@ Glossary
 
             content
 
-        Note the empty line between the declaration of the directive and its contents.
+        For more information, see Sphinx's `Directive documentation <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_
+
+
+    Index
+        An index is an :term:`rST` file used to indicate the layout of documents.
+        It contains at least one :term:`toctree`.
+
+        One index of note is the :term:`Root Index`
 
 
     rST
@@ -31,7 +38,7 @@ Glossary
        See this `cheat sheet <https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst>`_ for the common markup used in rST files.
 
     Root Index
-        The root index is the top-level index rooted in the :code:`docs/` folder located in your project.
+        The root index is the top-level :term:`Index` rooted in the :code:`docs/` folder located in your project.
         This index contains a :term:`toctree` that specifies the tabs in the top navigation bar.
 
     Role
