@@ -38,7 +38,6 @@ This will create a **hidden** environment folder :code:`.env` and install the pa
 2b. Activating environment using :code:`source.sh`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 After using :code:`install.sh`, or **whenever you open a new command terminal**, make sure that you **activate** the environment by running the following command while in the :code:`sphinx-documentation-demo` directory:
-.. _My target:
 
 .. code-block:: bash
 
