@@ -64,7 +64,7 @@ The following is a quick sketch of where Sphinx would expect files to be based o
       ┃ ┗ 📜index.rst       ← index for tab "tab_3"
       ┗ 📜index.rst         ← root index
 
-Creating "test" tab folder and empty index
+Creating "test_tab" folder and empty index
 ------------------------------------------
 We will now try to add a new tab to Sphinx.
 It will be called "test_tab" and will be next to the other tabs already in our documentation.
@@ -77,7 +77,7 @@ It will be called "test_tab" and will be next to the other tabs already in our d
 
 1. Create a new empty directory called "test" at: :code:`docs/test_tab/`
 2. Create a new empty "index.rst" file at: :code:`docs/test_tab/index.rst`
-3. Inside :code:`docs/index.rst`, in the indented :code:`toctree`, append the line :code:`test_tab/index`. It should look like the following:
+3. Inside :code:`docs/index.rst`, in the indented :term:`toctree`, append the line :code:`test_tab/index`. It should look like the following:
 
 
 .. code-block::

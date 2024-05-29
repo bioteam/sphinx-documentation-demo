@@ -8,6 +8,7 @@ Guides
 
    guide_what_is_sphinx
    guide_installation
+   guide_remote
 
 .. toctree::
    :maxdepth: 1
