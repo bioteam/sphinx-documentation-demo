@@ -15,6 +15,7 @@ Guides
    :caption: Walkthroughs
 
    walkthrough_adding_new_tab
+   walkthrough_adding_new_section
 
 .. toctree::
    :maxdepth: 1

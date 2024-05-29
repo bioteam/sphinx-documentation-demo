@@ -4,26 +4,23 @@ Subject_1
 This is a long page to test out some of the features of Sphinx.
 
 
-Section 1
+Heading
 =========
 
-Subsection 1
+Subheading
 ------------
 
-Sub-Subsection 1
+Sub-Subheading
 ~~~~~~~~~~~~~~~~
 
-Sub-Subsection 2
+Sub-Subheading
 ~~~~~~~~~~~~~~~~
 
-Sub-Subsection 3
-~~~~~~~~~~~~~~~~
-
-Subsection 2
+Subheading
 ------------
 
-Section 2
+Heading 2
 ============
 
-Subsection 3
+Subheading 2
 ------------

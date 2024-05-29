@@ -1,4 +1,4 @@
-Adding New Tab
+Modifying Tabs
 ==============
 
 .. figure:: images/layout_top.png
@@ -6,8 +6,9 @@ Adding New Tab
 
     This walkthrough will cover how to add new tabs to the top bar (highlighted in red).
 
+
 Find the Root Index
--------------------
+===================
 The :code:`index.rst` files contain :code:`toctrees` that specify what rST documents should be included in the layout.
 
 In this walkthrough, we will need to edit the **root index**, which is the first **index.rst** file you find in the docs folder located within the project directory:
@@ -17,7 +18,6 @@ In this walkthrough, we will need to edit the **root index**, which is the first
     📦sphinx-documentation-demo
     ┗ 📂docs
       ┗ 📜index.rst    ← this is the root index
-
 
 
 Explore the Root Index
@@ -48,8 +48,8 @@ It's good idea to keep the contents of each tab in a separate directory in :code
 |
 
 
-Index File Layout for Tabs
---------------------------
+File Layout for Tabs
+====================
 The following is a quick sketch of where Sphinx would expect files to be based on the :code:`toctree` in :code:`docs/index.rst`:
 
 .. code-block::
@@ -91,14 +91,14 @@ It will be called "test_tab" and will be next to the other tabs already in our d
         test_tab/index
 
 Creating a "test document"
---------------------------
+==========================
 To make our new "test_tab" meaningful, we need to also add a document that can be viewed while within that tab.
 We will do this now:
 
 1. Create an empty "test" doc at :code:`docs/test_tab/test_doc.rst`
 2. Add the following text to the "test_doc" document:
 
-.. code-block::
+.. code-block:: txt
 
     Test Document
     =============
@@ -140,7 +140,7 @@ So when we added :code:`test_doc` to the previous toctree, it's assuming that th
         ┗ 📜test_doc.rst
 
 Build docs and explore the "test_tab"
-------------------------------------------
+==========================================
 Make sure to build your documentation using :code:`sphinx-build` or :code:`sphinx-autobuild`.
 
 .. figure:: images/guide_add_tab_final.png

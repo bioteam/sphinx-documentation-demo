@@ -20,5 +20,3 @@ The caption for each toctree determines the section name.
    subject_3
    subject_4
    subsection_2/index
-
-
